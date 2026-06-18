@@ -106,7 +106,7 @@ nav {
 }
 
 .nav-text {
-    padding: 0 0.5rem;
+    padding: 0 0.3rem;
     font-weight: 600;
     color: rgb(179, 179, 179);
     transition: 0.1s;
@@ -390,8 +390,3 @@ input[type="range"]::-webkit-slider-thumb {
     color: rgb(194, 194, 194);
     margin-left: 1rem;
 }
-/* .music-play-btn i{
-    font-size: 3rem;
-} */
-/* #play i{
-    font-size: 2.5rem

@@ -93,8 +93,12 @@ backward = document.getElementById('backward');
 backward.addEventListener('click', () => {
     playNextSong();
 
+forward.addEventListener('click', () => {
+    playNextSong();
+})
 })
 
 audio.addEventListener('ended', () => {
     playNextSong();
 })
+
