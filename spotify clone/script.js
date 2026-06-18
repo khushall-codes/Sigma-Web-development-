@@ -2,6 +2,8 @@ const play = document.getElementById('play');
 const progressBar = document.getElementById('progressBar');
 const audio = new Audio('./audio/5.mp3');
 
+let currentSong = 1;
+
 progressBar.max = 100;
 progressBar.value = 0;
 
@@ -58,6 +60,7 @@ playMusic.forEach(element => {
 
     const index = parseInt(target.id, 10);
     if (isNaN(index)) return;
+    currentSong = index;
 
     audio.src = `./audio/${index}.mp3`;
     audio.currentTime = 0;
@@ -67,3 +70,31 @@ playMusic.forEach(element => {
     play.classList.add('fa-circle-pause');
   });
 });
+
+playNextSong = () => {
+    let nextSong = (currentSong + 1) % playMusic.length;
+    currentSong = nextSong == 0 ? 22 : nextSong;
+    audio.src = `audio/${currentSong}.mp3`;
+    audio.currentTime = 0;
+    audio.play();
+}
+
+playPrevSong = () => {
+    let prevSong = (currentSong - 1);
+    currentSong = prevSong == 0 ? 22 : prevSong;
+    audio.src = `audio/${currentSong}.mp3`;
+    audio.currentTime = 0;
+    audio.play();
+}
+
+forward = document.getElementById('forward');
+backward = document.getElementById('backward');
+
+backward.addEventListener('click', () => {
+    playNextSong();
+
+})
+
+audio.addEventListener('ended', () => {
+    playNextSong();
+})
