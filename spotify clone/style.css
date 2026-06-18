@@ -194,7 +194,7 @@ nav {
 .box {
     /* background-color: aqua; */
     background-color: #1f1f1f;
-    height: 27%;
+    height: 125px;
     width: 97%;
     border-radius: 10px;
     margin: 25px 0;
@@ -203,7 +203,7 @@ nav {
 .box h4 {
     /* background-color: aquamarine; */
     font-weight: 600;
-    font: 0.9rem;
+    font-size: 0.9rem;
     padding: 1.3rem 0 0.5rem 1rem;
 }
 
@@ -250,10 +250,12 @@ nav {
     width: 10rem;
     padding: 0.7rem;
     border-radius: 5px;
+     transition: all 0.3s ease;
 }
 
 .music-card:hover {
-    background-color: #272727
+    background-color: #272727;
+    transform: scale(1.02);
 }
 
 .music-section {
@@ -309,7 +311,7 @@ img.discription {
     margin-top: 0.2rem;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+     /* justify-content: space-between;  */
     background-color: black;
     gap: 12rem;
 }
@@ -387,9 +389,9 @@ input[type="range"]::-webkit-slider-thumb {
     color: rgb(194, 194, 194);
     margin-left: 1rem;
 }
-.music-play-btn i{
+/* .music-play-btn i{
     font-size: 3rem;
-}
-#play i{
+} */
+/* #play i{
     font-size: 2.5rem;
-}
+} */
