@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgb(139, 139, 139);
+    font-family: 'fira sans', sans-serif;
+    width: 202px;
+    height: 100vh;
+}
+
+.sideber nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 20px;
+    padding: 24px 65px
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    /* background-color: purple; */
+    width: 85vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    /* background-color: aqua; */
+    height: 65vh;
+    width: 84vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+}
+
+.devpic img {
+    height: 65vh;
+}
+
+.moreabout {
+    font-size: 17px;
+    font-family: 'fira sans', sans-serif;
+    margin-top: 10px;
+}
+
+.hello {
+    font-size: 32px;
+}
+
+.Name {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'fira sans', sans-serif;
+}
+
+.About {
+    font-size: 15px;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.btn {
+    padding: 8px 10px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(133 193 193);
+    font-weight: bold;
+    font-size: 10px;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: rgb(133 193 193);
+}
+btn-sm{
+    font-size: 10px;
+}
+
+.contactform {
+    font-family: 'fira sans', sans-serif;
+  
+    padding: 48px;
+}
+
+.contactform h1 {
+    font-family: "Source Code Pro", monospace;
+    
+    padding: 12px 0;
+}
+
+
+
+.contactform form div {
+    padding: 18px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.contactform form div input {
+    width: 25vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 14px;
+    color: aqua;
+    padding: 3px 0px 0px 0px;
+    
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.blogitem{
+margin: 20px;
+font-family: 'fira sans', sans-serif;
+}
+
+.blogcontainer h1{
+font-family: 'fira sans', sans-serif;
+}
+
+.blogitem p{
+ font-family: "Source Code Pro", monospace;
+}
